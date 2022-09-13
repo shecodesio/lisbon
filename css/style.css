@@ -11,8 +11,89 @@ a:hover {
 
 .container {
 	max-width: 1170px;
-	margin:  0 auto;
+	margin: 0 auto;
+}
 
+.grid {
+	display: grid;
+}
+
+.grid-2-columns {
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 64px;
+}
+
+.grid-3-columns {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 64px;
+}
+
+@media (max-width: 960px) {
+	.grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+.card {
+	background: #fff;
+	margin:  30px 0 0;
+}
+
+
+.card h4 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 36px;
+	color: #272044;
+	margin:  0;
+}
+
+.card h5 {
+	margin:  0;
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.card-header .grid {
+	grid-gap: 0;
+}
+@media (max-width: 960px) {
+	.card-header img {
+		display: none;
+	}
+}
+
+
+.card .button {
+	background: #462CB3;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	display: block;
+	color:  #fff;
+	text-decoration: none;
+	padding:  16px 0;
+	margin-top: 30px;
+}
+
+.card p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #272044;
+	opacity: 0.7;
+}
+
+.card-body {
+	padding:  30px;
 }
 
 header {
@@ -20,14 +101,12 @@ header {
 	background-size:  cover;
 	background-repeat: no-repeat;
 	background-position: center;
-
 	color:  #fff;
 	text-align: center;
 	padding:  200px 0 ;
-
 }
 
-h1 {
+header h1 {
 	font-weight: 700;
 	font-size: 96px;
 	line-height: 144px;
@@ -50,7 +129,7 @@ header h3 {
 	letter-spacing: 5px;
 }
 
-.button {
+header .button {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 21px;
@@ -63,6 +142,47 @@ header h3 {
 	color: #272044;
 	margin:  30px 0 0;
 	display: inline-block;
+}
+
+main img, main iframe {
+	width:  100%;
+}
+
+main section {
+	background: #fff;
+	padding:  100px 0;
+}
+
+.section-grey {
+	background: #F8F8F8;
+}
+
+main h3 {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 5px;
+	color: #272044;
+	margin:  0;
+	opacity: 0.3;
+	text-transform: uppercase;
+
+}
+
+main h2 {
+	margin:  0;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1.5;
+	color: #272044;
+}
+
+main p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #272044;
+	opacity: 0.7;
 }
 
 
