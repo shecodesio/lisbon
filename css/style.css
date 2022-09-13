@@ -28,6 +28,10 @@ a:hover {
 	grid-gap: 64px;
 }
 
+.grid-3-columns-with-first-narrow {
+	grid-template-columns: 1fr 2fr 2fr;
+}
+
 @media (max-width: 960px) {
 	.grid {
 		grid-template-columns: 1fr;
@@ -36,64 +40,6 @@ a:hover {
 
 .text-center {
 	text-align: center;
-}
-
-.card {
-	background: #fff;
-	margin:  30px 0 0;
-}
-
-
-.card h4 {
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 36px;
-	color: #272044;
-	margin:  0;
-}
-
-.card h5 {
-	margin:  0;
-	font-weight: 700;
-	font-size: 13px;
-	line-height: 20px;
-}
-
-.card-header .grid {
-	grid-gap: 0;
-}
-@media (max-width: 960px) {
-	.card-header img {
-		display: none;
-	}
-}
-
-
-.card .button {
-	background: #462CB3;
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 21px;
-	text-align: center;
-	letter-spacing: 3px;
-	text-transform: uppercase;
-	display: block;
-	color:  #fff;
-	text-decoration: none;
-	padding:  16px 0;
-	margin-top: 30px;
-}
-
-.card p {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 24px;
-	color: #272044;
-	opacity: 0.7;
-}
-
-.card-body {
-	padding:  30px;
 }
 
 header {
@@ -109,8 +55,14 @@ header {
 header h1 {
 	font-weight: 700;
 	font-size: 96px;
-	line-height: 144px;
+	line-height: 1.5;
 	margin:  0;
+}
+
+@media (max-width: 960px) {
+	header h1 {
+		font-size: 48px
+	}
 }
 
 header h2 {
@@ -174,6 +126,7 @@ main h2 {
 	font-weight: 700;
 	font-size: 40px;
 	line-height: 1.5;
+	margin-bottom: 30px;
 	color: #272044;
 }
 
@@ -185,15 +138,70 @@ main p {
 	opacity: 0.7;
 }
 
+.card {
+	background: #fff;
+}
+
+
+.card h4 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 36px;
+	color: #272044;
+	margin:  0;
+}
+
+.card h5 {
+	margin:  0;
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.card-header .grid {
+	grid-gap: 0;
+}
+
+@media (max-width: 960px) {
+	.card-header img {
+		display: none;
+	}
+}
+
+
+.card .button {
+	background: #462CB3;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	display: block;
+	color:  #fff;
+	text-decoration: none;
+	padding:  16px 0;
+	margin-top: 30px;
+}
+
+.card p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #272044;
+	opacity: 0.7;
+}
+
+.card-body {
+	padding:  30px;
+}
+
+
 
 footer {
 	background-image: linear-gradient(rgba(39,32,68,0.9), rgba(39,32,68,0.9)), url('../images/footer-bg.png');
 }
 
-.footer-sections {
-	display: grid;
-	grid-template-columns: 1fr 2fr 2fr;
-}
 
 footer section {
 	margin:  20px;
