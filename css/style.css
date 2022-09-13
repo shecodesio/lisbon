@@ -14,6 +14,14 @@ a:hover {
 	margin: 0 auto;
 }
 
+@media (max-width: 991px) {
+	.container {
+		max-width: 100% !important;
+		padding-right: 1.5rem !important;
+		padding-left: 1.5rem !important;
+	}
+}
+
 .grid {
 	display: grid;
 }
@@ -35,6 +43,12 @@ a:hover {
 @media (max-width: 960px) {
 	.grid {
 		grid-template-columns: 1fr;
+	}
+	.grid-3-columns {
+		grid-gap: 32px;
+	}
+	.instagram-media {
+		max-width: 100% !important;
 	}
 }
 
@@ -103,6 +117,12 @@ main img, main iframe {
 main section {
 	background: #fff;
 	padding:  100px 0;
+}
+
+@media (max-width: 991px){
+	main section{
+		padding: 1.5rem 0;
+	}
 }
 
 .section-grey {
@@ -200,6 +220,8 @@ main p {
 
 footer {
 	background-image: linear-gradient(rgba(39,32,68,0.9), rgba(39,32,68,0.9)), url('../images/footer-bg.png');
+	background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
