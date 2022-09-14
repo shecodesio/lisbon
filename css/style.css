@@ -9,6 +9,16 @@ a:hover {
 	text-decoration: none;
 }
 
+.logo {
+	display: block;
+	margin-bottom: 100px;
+}
+
+.logo img {
+	max-width: 200px;
+	opacity: 0.9;
+}
+
 .container {
 	max-width: 1170px;
 	margin: 0 auto;
@@ -63,7 +73,7 @@ header {
 	background-position: center;
 	color:  #fff;
 	text-align: center;
-	padding:  200px 0 ;
+	padding:  30px 0 200px;
 }
 
 header h1 {
